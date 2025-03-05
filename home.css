@@ -447,24 +447,28 @@
             border-radius: 50%;
             box-shadow: 0 0 10px #e61d4c;
         }
-        header .side .swipe{
-            display: none;
-        }
-        @media (max-width: 768px) {
-           /*  */
             .side .swipe{
-                position: absolute;
-            top: 0;
-            left: 0;
-            width: 250px;
-            height: 100vh;
-            transform: translateX(-100% );
-            transition: transform 0.5s ease;
+            display: none;
             }
+            @media (max-width: 768px) {
+            /*  */
+                .side .swipe{
+                    display: block;
+                position: relative;
+                top: 0;
+                z-index: 70;
+                left: 0;
+                width: 250px;
+                height: 100vh;
+                transform: translateX(-100%);
+                transition: transform 0.5s ease;
+                }
             .side .swipe.active{
+                pointer-events: auto;
                 transform: translateX(0);
             }
             header .side{
+                pointer-events: none;
                 width: 100%;
                 height: 100%;
                 left: 0;
@@ -494,6 +498,11 @@
             }header .side .sidebar .pil {
                 padding: 20px 0 20px 20px;
                 transition: all 0.5s ease;
+                z-index: 1000;
+                display: block;
+            }
+            #home{
+                pointer-events: none;
             }
             header .side .sidebar .pil:hover {
                 padding: 20px 0 20px 20px;
@@ -506,7 +515,7 @@
             }
         
             /*  */
-
+            
             header .atas{
                 padding: 10px 0 20px 0;
                 display: flex;
@@ -532,6 +541,7 @@
                 text-shadow: 0 3px 4px #727272;
             }
             .home {
+                pointer-events: none;
                 flex-direction: column-reverse;
                 text-align: center;
                 width: 100%;
@@ -550,6 +560,9 @@
             }
             .home .kiri p{
                 font-size: 16px;
+            }
+            .home .kiri a{
+                pointer-events: auto;
             }
             .home .kiri {
                 margin-top: -80px;

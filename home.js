@@ -128,4 +128,3 @@ function smoothScroll(target, offset = 0) {
   requestAnimationFrame(animation);
 }
 
-// 

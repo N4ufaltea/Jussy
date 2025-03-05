@@ -165,12 +165,13 @@
     margin-right:5px;
     font-size: 30px;
 }
-header .side .swipe{
+.side .swipe{
     display: none;
 }
 @media (max-width: 768px) {
     /*  */
     .side .swipe{
+        display: block;
         position: absolute;
     top: 0;
     left: 0;

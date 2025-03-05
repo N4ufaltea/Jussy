@@ -1,0 +1,372 @@
+@import url('https://fonts.cdnfonts.com/css/cocon');
+   *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Cocon",sans-serif;
+        }
+        html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header .atas{
+            background-color: #ffcbd8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+                .logo img{
+                    height: auto;
+                    max-width: 170px;
+                    filter: drop-shadow( 2px 2px white);  
+                }
+        nav ul{
+            margin-left: 350px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;    
+            flex-direction: row ;
+            gap: 40px;
+            background-color: #ffcbd8;
+        }
+        nav ul li a{
+            font-size: 18px;
+            font-weight: 600;
+            color: #e61d4c;
+            text-shadow: 1px 1px white;
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+.menu{
+    display: none;
+}
+
+.cr{    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0;
+    background-color: #fdeef1;
+    gap: 10px;
+}
+.cr img{
+    height: auto;
+    max-width: 450px;
+}
+.cr h2{
+    font-size: 35px;
+    color: #e61d4c;
+}
+.cr .ig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 5px;
+}
+.cr .ig i{
+    font-size: 30px;
+    color: #e61d4c;
+    font-weight: bold;
+}
+.cr p{
+    font-size: 20px;
+    color: #28623c;
+}
+.aboutus {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url("aset/AboutUsBG.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+    padding: 125px 0;
+}
+
+.aboutus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.aboutus h2 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-shadow: 0px 0px 30px black;
+    font-size: 40px; 
+}
+.satu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 70px 0;
+    gap: 50px;
+    background-color: #fdeef1;
+    max-width: 100%;
+}
+.satu .kiri{
+    max-width: 500px;
+    text-align:left;
+}
+.satu .kiri h3{
+    font-size: 30px;
+    color: #e61d4c;
+} 
+.satu .kiri p{
+font-size: 12px; 
+line-height: 1.8;
+color: rgb(76, 76, 76);
+} 
+.satu .kanan img{
+    height: auto;
+    max-width: 400px;
+    border-radius: 20px;
+    border:4px solid #28623c ;
+    box-shadow: 6px 6px 6px #28623c;
+}
+.dua{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 70px 0;
+    gap: 50px;
+    max-width: 100%;
+}
+.dua .kiri img{
+    height: auto;
+    max-width: 400px;
+    border-radius: 20px;
+    border:4px solid #28623c ;
+    box-shadow: 6px 6px 6px #28623c;
+}
+.dua .kanan{
+    max-width: 500px;
+    text-align: left;
+}
+.dua .kanan h3{
+    font-size: 30px;
+    color: #e61d4c;
+}
+.dua .kanan p{
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgb(76, 76, 76);
+}
+.tiga{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 70px 0;
+    gap: 50px;
+    background-color: #fdeef1;
+    max-width: 100%;
+}
+.tiga .kanan img{
+    height: auto;
+    max-width: 400px;
+    border-radius: 20px;
+    border:4px solid #28623c ;
+    box-shadow: 6px 6px 6px #28623c;
+}
+.tiga .kiri{
+    max-width: 500px;
+    text-align: left;
+}
+.tiga .kiri h3{
+    font-size: 30px;
+    color: #e61d4c;
+}
+.tiga .kiri ul li p1{
+    color: #e61d4c;
+line-height: 1.8;
+
+}
+.tiga .kiri ul{
+    font-size: 12px;
+    color: rgb(76, 76, 76); 
+    list-style: disc;
+    line-height: 1.8;
+}
+.empat{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 70px 0;
+    gap: 50px;
+    max-width: 100%;
+}
+.empat .kiri img{
+    height: auto;
+    max-width: 400px;
+    border-radius: 20px;
+    border:4px solid #28623c ;
+    box-shadow: 6px 6px 6px #28623c;
+}
+.empat .kanan{
+    max-width: 500px;
+    text-align: left;
+}
+.empat .kanan h3{
+    font-size: 30px;
+    color: #e61d4c;
+}
+.empat .kanan p{
+    color: rgb(76, 76, 76); 
+    font-size: 12px;
+    line-height: 1.8;
+}
+.empat .kanan p1{
+    color: #e61d4c;
+}
+
+.wa{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.wa a i{
+    background-color: #e61d4c;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #e61d4c;
+
+}
+@media (max-width: 768px) {
+          /*  */
+          .side .swipe{
+            position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        transform: translateX(-100% );
+        transition: transform 0.5s ease;
+        }
+        .side .swipe.active{
+            transform: translateX(0);
+        }
+        header .side{
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: fixed;
+            display: block;
+            z-index: 60;
+        }
+        header .side .sidebar{
+            z-index: 50;
+            background-color: white;
+            width: 200px;
+            padding-top: 10px;
+            padding-bottom: 100vh;
+            text-align: left;
+            border-right:4px solid #e61d4c;
+            box-shadow: 3px 0 10px #5c5c5c;
+        }
+        header .side img{
+            margin: 1px 0 0 5px;
+        }
+    
+        header .side .sidebar .pil a{
+            font-size: 25px;
+            color: #e61d4c;
+            text-decoration: none;
+        }header .side .sidebar .pil {
+            padding: 20px 0 20px 20px;
+            transition: all 0.5s ease;
+        }
+        header .side .sidebar .pil:hover {
+            padding: 20px 0 20px 20px;
+            background-color: #ffdae3;
+        }
+        header .side .sidebar .pil a i{
+            color: #e61d4c;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    
+        /*  */
+    header .atas{
+        padding: 10px 0 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 70px;
+        color: #e61d4c;
+    }
+    nav ul {
+        display: none;
+    }
+    .menu {
+        transform: translateY(5px);
+        font-size: 50px;
+        display: block;
+        z-index: 300;
+        transition: all 0.75s ease-in-out;
+    }
+    .menu.active{
+        color: #28623c;
+        text-shadow: 0 3px 4px #727272;
+    }
+    .aboutus{
+        width: 100%;
+    }
+    .satu{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .satu .kiri{
+        width: 85%;
+    }
+    .dua{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .dua .kanan{
+        width: 85%;
+    }
+    .tiga{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .tiga .kiri{
+        width: 85%;
+    }
+    .empat{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .empat .kanan{
+        width: 85%;
+    }
+}

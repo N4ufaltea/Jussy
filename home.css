@@ -1,0 +1,628 @@
+    @import url('https://fonts.cdnfonts.com/css/cocon');
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Cocon",sans-serif;
+            }
+            html {
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth;
+
+            }
+            header .atas{
+                background-color: #ffcbd8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+                    .logo img{
+                        z-index: 200;
+                        height: auto;
+                        max-width: 170px;
+                        filter: drop-shadow( 2px 2px white);  
+                    }
+            nav ul{
+                margin-left: 350px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;    
+                flex-direction: row ;
+                gap: 40px;
+                background-color: #ffcbd8;
+            }
+            nav ul li a{
+                font-size: 18px;
+                font-weight: 600;
+                color: #e61d4c;
+                text-shadow: 1px 1px white;
+                text-decoration: none;
+            }
+            li{
+                list-style: none;
+            }
+    .menu{
+        display: none;
+    }
+
+    .home{
+
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    gap: 200px; 
+    background-image: url("aset/liquid.png"); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+    .home .kiri, .kanan{
+        margin-top: 40px;
+    }
+    .home .kiri h3{
+        margin-top: -150px;
+        color: #e61d4c;
+        font-size: 40px;
+        text-align: left;
+    }
+    .home .kiri p{
+        font-size: 20px;
+        margin-top: 10px;
+        color: #28623c;
+    }
+
+    .home .kiri a{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 40px;
+        text-decoration: none;
+        height: 50px;
+        width: 200px;
+        background-color: rgb(235, 184, 0);
+        color: black;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    .home .kanan img{
+        border-radius: 20px;
+        height: 400px;
+        width: 400px;
+        margin-bottom: 250px;
+        border: solid 3px #28623c;
+        box-shadow: -7px 7px 7px #28623c;
+
+    }
+    .selengkap{
+        margin-top:20px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .selengkap .lengkap{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+    .lengkap img{
+        height: auto;
+        max-width: 100px;
+    }
+    .lengkap p{
+        font-size: 10px;
+    }
+    .selengkap h3{
+        font-size: 30px;
+        color: #e61d4c;
+    }
+    .selengkap h4{
+        color: #28623c;
+    }
+    .selengkap p{
+        margin-top: 10px;
+        color: rgb(79, 79, 79);
+    }
+    .quote {
+        margin-top: 150px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-image: url("aset/Easy\ Fruit\ Salad\ Recipe.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative; 
+        padding: 80px 0; 
+    }
+
+    .quote::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .quote h2 {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-shadow: 0px 0px 30px black;
+        font-size: 30px; 
+    }
+    .cr{    
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 60px 0;
+        background-color: #fdeef1;
+        gap: 10px;
+    }
+    .cr img{
+        height: auto;
+        max-width: 450px;
+    }
+    .cr h2{
+        font-size: 35px;
+        color: #e61d4c;
+    }
+    .cr .ig{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .cr .ig i{
+        font-size: 30px;
+        color: #e61d4c;
+        font-weight: bold;
+    }
+    .cr p{
+        font-size: 20px;
+        color: #28623c;
+    }
+
+    /*  */
+
+    .produk{
+        padding: 50px 0 0 0 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .produk .swiper .swiper-wrapper .swiper-slide img{
+        height: auto;
+        max-width: 300px;
+        box-shadow:  0 2px 5px #28623c; 
+        border-radius: 20px;
+    }   
+
+    .produk .swiper {
+        max-width: 900px;
+        overflow: hidden;
+        padding: 50px 10px;
+        border-radius: 20px;
+        margin-bottom: 80px;
+    }
+    
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper .swiper-pagination-bullet{
+        height: 13px;
+        width: 13px;
+        opacity: 0.5;
+        background: #e61d4c;
+    }
+    .swiper .swiper-pagination-bullet-active{
+        opacity: 1;
+    }
+    .swiper-button-next::after, .swiper-button-prev::after{
+    display: none;
+    }
+    .swiper-button-next i, .swiper-button-prev i{
+        font-size: 40px; 
+    color: #e61d4c; 
+    overflow: visible;
+    position: absolute;
+    z-index: 100;
+    }
+    .swiper-button-next,.swiper-button-prev{
+    margin: 0 10px;
+    text-shadow: 0 3px 4px rgb(96, 96, 96);
+    }
+    .produk h3{
+        font-size: 30px;
+        color: #e61d4c;
+    }
+    .produk p{
+        padding: 30px 0;
+        font-size: 20px;
+        color: #28623c;
+    }
+
+    /*  */
+
+    .Galeri{
+        background-color: #ffcbd8;
+        padding: 50px 0 0 0 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .Galeri .swiperGaleri .swiper-wrapper .swiper-slide img{
+        height: auto;
+        max-width: 300px;
+        box-shadow:  0 2px 5px #28623c; 
+        border-radius: 20px;
+    }   
+
+    .Galeri .swiperGaleri {
+        max-width: 900px;
+        overflow: hidden;
+        padding: 50px 10px;
+        border-radius: 20px;
+        margin-bottom: 80px;
+    }
+    
+    .swiperGaleri .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 4/6;
+    }
+    .swiperGaleri .swiper-pagination-bullet{
+        height: 13px;
+        width: 13px;
+        opacity: 0.5;
+        background: #e61d4c;
+    }
+    .swiperGaleri .swiper-pagination-bullet-active{
+        opacity: 1;
+    }
+    .swiperGaleri .swiper-button-next::after, .swiperGaleri .swiper-button-prev::after{
+    display: none;
+    }
+    .swiperGaleri .swiper-button-next i, .swiperGaleri .swiper-button-prev i{
+        font-size: 40px; 
+    color: #e61d4c; 
+    overflow: visible;
+    position: absolute;
+    z-index: 100;
+    }
+    .swiperGaleri .swiper-button-next, .swiperGaleri .swiper-button-prev{
+    margin: 0 10px;
+    text-shadow: 0 3px 4px rgb(96, 96, 96);
+    }
+    .Galeri h3{
+        font-size: 30px;
+        color: #e61d4c;
+    }
+    .Galeri p{
+        padding: 30px 0;
+        font-size: 20px;
+        color: #28623c;
+    }
+
+    /*  */  
+
+    .lokazi{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 30px;
+        color: #e61d4c;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .lokasi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        gap: 70px;
+        padding: 10px 0 40px 0;
+    }
+
+    .lokasi .kiri img{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 3px 7px rgb(96, 96, 96);
+    }
+    .lokasi .kanan iframe{
+        margin-bottom: 40px;
+        width: 450px;
+        height: 300px;
+        border: 0;
+        border-radius: 20px;
+        box-shadow: 0 3px 7px rgb(96, 96, 96);
+        }
+        .jussyWar{
+            padding: 80px 0;
+            background-color: #ffcbd8;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+        }
+        .jussyWar .hp img{
+            height: auto;
+            max-width: 350px;
+        }
+        .hp{
+            width: 50%;
+            background-color: white;
+            box-shadow: 2px 4px 7px rgb(70, 70, 70);
+            border: 4px solid #e61d4c;
+            padding: 20px 10px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .teks h3{
+            font-size: 30px;
+            color: #e61d4c;
+        }
+        .teks{
+            width: 30%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .teks .login{
+            background-color: #28623c;
+            padding: 10px 80px;
+            margin: 40px 0 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 4px rgb(67, 67, 67);
+        }
+        .teks .login a{
+            text-decoration:    none;
+            color: white;
+        }
+        .teks .daftar{
+        background-color: rgb(235, 184, 0);
+            padding: 10px 40px;
+            margin: 20px 0 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 4px rgb(67, 67, 67);
+        }
+        .teks .daftar a{
+        text-decoration: none;
+        color: rgb(57, 57, 57);
+            }
+
+        .wa{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .wa a i{
+            background-color: #e61d4c;
+            padding: 10px;
+            font-size: 40px;
+            color: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #e61d4c;
+        }
+        header .side{
+            display: none;
+        }
+        @media (max-width: 768px) {
+           /*  */
+            .side .swipe{
+                position: absolute;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100vh;
+            transform: translateX(-100% );
+            transition: transform 0.5s ease;
+            }
+            .side .swipe.active{
+                transform: translateX(0);
+            }
+            header .side{
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                position: fixed;
+                display: block;
+                z-index: 60;
+            }
+            header .side .sidebar{
+                z-index: 50;
+                background-color: white;
+                width: 200px;
+                padding-top: 10px;
+                padding-bottom: 100vh;
+                text-align: left;
+                border-right:4px solid #e61d4c;
+                box-shadow: 3px 0 10px #5c5c5c;
+            }
+            header .side img{
+                margin: 1px 0 0 5px;
+            }
+        
+            header .side .sidebar .pil a{
+                font-size: 25px;
+                color: #e61d4c;
+                text-decoration: none;
+            }header .side .sidebar .pil {
+                padding: 20px 0 20px 20px;
+                transition: all 0.5s ease;
+            }
+            header .side .sidebar .pil:hover {
+                padding: 20px 0 20px 20px;
+                background-color: #ffdae3;
+            }
+            header .side .sidebar .pil a i{
+                color: #e61d4c;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        
+            /*  */
+
+            header .atas{
+                padding: 10px 0 20px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 70px;
+                color: #e61d4c;
+            }
+            nav ul {
+                display: none;
+            }
+
+            .menu {
+                transform: translateY(5px);
+                font-size: 50px;
+                display: block;
+                z-index: 1000;
+                transition: all 0.75s ease-in-out;
+            }
+            .menu.active{
+                color: #28623c;
+                text-shadow: 0 3px 4px #727272;
+            }
+            .home {
+                flex-direction: column-reverse;
+                text-align: center;
+                width: 100%;
+            }
+            .home .kanan img {
+                width: 90%;
+                height: 90%;
+                margin-top: -45px;
+                box-shadow: 0px 5px 7px #28623c;
+            }
+           
+            .home .kiri h3{
+                font-size: 30px;
+                margin-top: -450px;
+                text-align: center;
+            }
+            .home .kiri p{
+                font-size: 16px;
+            }
+            .home .kiri {
+                margin-top: -80px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+            .selengkap .lengkap{
+                flex-direction: column;
+            }
+            .selengkap .judul{
+                width: 95%;
+                font-size: 26px;
+            }
+            .quote h2{
+                font-size: 20px;
+                font-weight: 200;
+            }
+            .produk p{
+                width: 85%;
+                font-size: 16px;
+            }
+            .produk{
+                width: 100%;
+            }
+            .produk .swiper{
+                width: 100%;
+            }
+            .Galeri{
+                width: 100%;
+            }
+            .Galeri p{
+                width: 85%;
+                font-size: 16px;
+            }
+            .Galeri .swiper{
+                width: 100%;
+            }
+            .lokazi{
+                width: 100%;
+            }
+            .lokasi{
+                flex-wrap: wrap;
+                width: 85%;
+            }
+            .lokasi .kiri{
+                margin-top: 20px;
+            }
+            .lokasi .kanan iframe{
+                width: 100%;
+            }
+            .jussyWar{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+            }
+    .jussyWar .hp{
+        width: 85%;
+    }
+            .jussyWar .hp img{
+                width: 100%;
+                max-width: 800px;
+            
+            }
+            .jussyWar .teks{
+                width: 85%;
+                margin-top: 30px;
+                flex-wrap: wrap;
+            }
+        }
+        

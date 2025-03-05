@@ -259,6 +259,9 @@ line-height: 1.8;
     box-shadow: 0 0 10px #e61d4c;
 
 }
+header .side .swipe{
+    display: none;
+}
 @media (max-width: 768px) {
           /*  */
           .side .swipe{

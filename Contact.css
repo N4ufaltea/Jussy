@@ -165,7 +165,9 @@
     margin-right:5px;
     font-size: 30px;
 }
-
+header .side .swipe{
+    display: none;
+}
 @media (max-width: 768px) {
     /*  */
     .side .swipe{

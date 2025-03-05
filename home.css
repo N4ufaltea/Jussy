@@ -447,7 +447,7 @@
             border-radius: 50%;
             box-shadow: 0 0 10px #e61d4c;
         }
-        header .side{
+        header .side .swipe{
             display: none;
         }
         @media (max-width: 768px) {
